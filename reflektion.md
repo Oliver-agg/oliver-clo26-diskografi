@@ -32,4 +32,4 @@ Jag hade lagt till fler album och låtar. Nu har alla album exakt tre låtar, s�
 
 Jag har fem tabeller: Artists, Albums, Songs, Genres och Song_genres. Jag delade upp det så att varje sak bara lagras en gång. En artist har många album och ett album har många låtar, och det löser jag med främmande nycklar (Artist_id i Albums och Album_id i Songs). En låt kan ha flera genrer och en genre kan höra till många låtar, så där behövs kopplingstabellen Song_genres med två främmande nycklar.
 
-Ett annat sätt hade varit att lägga allt i en enda stor tabell. Då hade artistnamn och albumtitel stått på varje låt, och om man ville ändra en titel hade man behövt ändra på flera rader. Jag hade också fått stoppa in flera genrer i samma cell, till exempel "Pop, Dance-pop", och det går emot 1NF. Ett annat alternativ hade varit en genre-kolumn
+Ett annat sätt hade varit att lägga allt i en enda stor tabell. Då hade artistnamn och albumtitel stått på varje låt, och om man ville ändra en titel hade man behövt ändra på flera rader. Jag hade också fått stoppa in flera genrer i samma cell, till exempel "Pop, Dance-pop", och det går emot 1NF.
