@@ -79,6 +79,7 @@ INSERT INTO "Songs" VALUES (6,'Oxytocin',210,2);
 INSERT INTO "Songs" VALUES (7,'CHIHIRO',303,3);
 INSERT INTO "Songs" VALUES (8,'BIRDS OF A FEATHER',210,3);
 INSERT INTO "Songs" VALUES (9,'LUNCH',179,3);
+INSERT INTO "Songs" VALUES (10,'THE DINER',186,3);
 INSERT INTO "Song_genres" VALUES (1,1);
 INSERT INTO "Song_genres" VALUES (1,4);
 INSERT INTO "Song_genres" VALUES (1,2);
@@ -97,6 +98,7 @@ INSERT INTO "Song_genres" VALUES (8,8);
 INSERT INTO "Song_genres" VALUES (8,9);
 INSERT INTO "Song_genres" VALUES (9,2);
 INSERT INTO "Song_genres" VALUES (9,1);
+INSERT INTO "Song_genres" VALUES (10,3);
 
 ```
 
@@ -121,7 +123,8 @@ WHERE Albums.Title = 'Happier Than Ever';
 SELECT Albums.Title, COUNT(Songs.ID) AS Antal_latar
 FROM Albums
 JOIN Songs ON Songs.Album_id = Albums.ID
-GROUP BY Albums.ID;
+GROUP BY Albums.ID
+ORDER BY Antal_latar DESC;
 
 --- query 4: Längsta låten ---
 SELECT Title, Length_seconds 
@@ -139,7 +142,11 @@ SELECT Title FROM Songs ORDER BY Title COLLATE NOCASE;
 ## 4. Lägg till en ny rad — INSERT
 
 ```sql
-INSERT INTO Songs (ID, Title, Length_seconds, Album_id) VALUES (10, 'Testtesttest', 200, 3);
+INSERT INTO Songs (ID, Title, Length_seconds, Album_id)
+VALUES (10, 'Testtesttest', 200, 3);
+
+INSERT INTO Songs (ID, Title, Length_seconds, Album_id)
+VALUES (11, 'Testtesttest', 200, 3);
 
 ```
 
@@ -148,7 +155,11 @@ INSERT INTO Songs (ID, Title, Length_seconds, Album_id) VALUES (10, 'Testtesttes
 ## 5. Ta bort en rad — DELETE
 
 ```sql
-DELETE FROM Songs WHERE ID = 10;
+DELETE FROM Songs
+WHERE ID = 10;
+
+DELETE FROM Songs
+WHERE ID = 11;
 
 ```
 
@@ -157,7 +168,13 @@ DELETE FROM Songs WHERE ID = 10;
 ## 6. Uppdatera en rad — UPDATE
 
 ```sql
-UPDATE Songs SET Length_seconds = 215 WHERE ID = 10;
+UPDATE Songs SET Length_seconds = 215
+WHERE ID = 10;
+
+UPDATE Songs
+SET Length_seconds = 215
+WHERE ID = 11;
+
 
 ```
 
