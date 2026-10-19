@@ -24,7 +24,9 @@ SELECT, WHERE och ORDER BY kändes ganska naturligt, för det hade jag övat på
 
 ## Om du hade mer tid — vad hade du lagt till eller gjort annorlunda?
 
-Jag hade lagt till fler album och låtar. Nu har alla album exakt tre låtar, så query 7 (albumet med flest låtar) får inget tydligt svar. Med en fjärde låt på något album hade den blivit bättre. Jag hade också kollat alla låtlängder mot Spotify en gång till och lagt till en query som visar låtar tillsammans med sina genrer, så att man ser att många-till-många fungerar.
+Jag hade från början tre låtar per album, vilket gjorde att query 7 inte gav ett entydigt svar eftersom alla album hade lika många låtar. Jag lade därför till en fjärde låt på Hit Me Hard And Soft. Efter ändringen visar query 3 hur många låtar varje album har, sorterat från flest till minst, och query 7 kan nu visa albumet med flest låtar.
+
+Jag hade också velat kontrollera alla låtlängder mot Spotify en gång till och lägga till en query som visar låtar tillsammans med deras genrer, så att man tydligare kan se hur många-till-många-relationen fungerar.
 
 ---
 
