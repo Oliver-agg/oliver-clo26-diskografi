@@ -7,7 +7,9 @@
 ---
 
 > Lägg länk till eller bild på ditt ER-diagram här:
-> ![ER-diagram över Billie Eilish-databasen](ER-diagram_Billie_Eilish.png)
+## ER-diagram
+
+![ER-diagram över Billie Eilish-databasen](ER-diagram_Billie_Eilish.png)
 
 ---
 
@@ -143,7 +145,7 @@ SELECT Title FROM Songs ORDER BY Title COLLATE NOCASE;
 
 ```sql
 INSERT INTO Songs (ID, Title, Length_seconds, Album_id)
-VALUES (10, 'Testtesttest', 200, 3);
+VALUES (12, 'Testtesttest', 200, 3);
 
 INSERT INTO Songs (ID, Title, Length_seconds, Album_id)
 VALUES (11, 'Testtesttest', 200, 3);
@@ -156,10 +158,7 @@ VALUES (11, 'Testtesttest', 200, 3);
 
 ```sql
 DELETE FROM Songs
-WHERE ID = 10;
-
-DELETE FROM Songs
-WHERE ID = 11;
+WHERE ID = 12;
 
 ```
 
@@ -168,9 +167,6 @@ WHERE ID = 11;
 ## 6. Uppdatera en rad — UPDATE
 
 ```sql
-UPDATE Songs SET Length_seconds = 215
-WHERE ID = 10;
-
 UPDATE Songs
 SET Length_seconds = 215
 WHERE ID = 11;
