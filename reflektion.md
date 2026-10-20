@@ -11,9 +11,10 @@ Det svåraste var att få ordningen rätt när jag la in data. Jag fick felet "F
 
 ---
 
- Vad lärde du dig?
+## Vad lärde du dig?
 
 Jag lärde mig hur tabeller hänger ihop med primärnycklar och främmande nycklar, och hur man ritar det i ett ER-diagram. Jag lärde mig skillnaden mellan en-till-många och många-till-många, och att man löser många-till-många med en kopplingstabell. Jag lärde mig också att använda JOIN, GROUP BY, COUNT och AVG, och att UPDATE och DELETE alltid ska ha WHERE så att man inte ändrar eller tar bort alla rader.
+
 ---
 
 ## Hur använde du SQL i praktiken — vad kändes naturligt och vad var förvirrande?
